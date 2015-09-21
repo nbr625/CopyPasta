@@ -1,27 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Clips</h1>
+<h1>Copy Pasta!</h1>
+<p>Is a good Pasta!</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<textarea cols="20" rows="40" id="post_body" name="post[body]"></textarea>
 
-  <tbody>
-    <% @clips.each do |clip| %>
-      <tr>
-        <td><%= clip.content %></td>
-        <td><%= link_to 'Show', clip %></td>
-        <td><%= link_to 'Edit', edit_clip_path(clip) %></td>
-        <td><%= link_to 'Destroy', clip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
-
-<%= link_to 'New Clip', new_clip_path %>
